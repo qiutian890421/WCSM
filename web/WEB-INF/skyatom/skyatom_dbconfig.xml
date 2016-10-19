@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <db>
+        <!-- 显示Exception -->
+        <exception-show>true</exception-show>
+        <!-- 显示sql语句 -->
+        <sql-show>true</sql-show>
+        <namespace>wc.sm</namespace>
+        <!-- 数据有效缓存时间 -->
+        <cacheTime>6000</cacheTime>
+        <driver-name>com.mysql.jdbc.Driver</driver-name>
+        <!-- 配置工厂驱动 -->
+        <factory-driver-name>com.mysql.jdbc.ProfilerEventHandlerFactory</factory-driver-name>
+        <url><![CDATA[jdbc:mysql://192.168.4.222:3306/wcsm_1?useUnicode=true&characterEncoding=utf8]]></url>
+        <username>root</username>
+        <pwd>RSlZw6Q019g=</pwd>
+        <connections>2</connections>
+        <!-- 每个连接生命周期  毫秒计算 -->
+        <active-time>3600000</active-time>
+        <!-- 连接使用超时 -->
+        <timeout>15000</timeout>
+    </db>
+</config>

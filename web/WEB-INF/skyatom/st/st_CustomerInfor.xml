@@ -1,0 +1,598 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<root>
+    <namespace name='wc.sm'>
+        <sts>
+            <st>
+                <schame>CustomerInfor</schame>
+                <description>[插入值] 客户信息表</description>
+                <type>insert</type>
+                <id>CustomerInfor_insertvalue</id>
+                <statment><![CDATA[insert into CustomerInfor (_id,_username,_password,_upay,_freeze,_valid,_createtime) values(,[@_id] ,[@_username] ,[@_password] ,[@_upay] ,[@_freeze] ,[@_valid] ,[@_createtime] );]]> </statment>
+                <maps>
+                    <map>
+                        <map-description>ID</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_id</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>用户名</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_username</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_password</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>支付密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_upay</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>是否冻结</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>@_freeze</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>是否启用</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>@_valid</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>创建时间</map-description>
+                        <value-type>Long</value-type>
+                        <map-name>@_createtime</map-name>
+                        <class-property> </class-property>
+                    </map>
+                </maps>
+                <result>
+                    <class-name>@NULL</class-name>
+                    <property type='String'>String</property>
+                </result>
+            </st>
+            <st>
+                <schame>CustomerInfor</schame>
+                <description>[插入对象] 客户信息表</description>
+                <type>insert</type>
+                <id>CustomerInfor_insertobject</id>
+                <statment><![CDATA[insert into CustomerInfor (_id,_username,_password,_upay,_freeze,_valid,_createtime) values(,[@_id] ,[@_username] ,[@_password] ,[@_upay] ,[@_freeze] ,[@_valid] ,[@_createtime] );]]> </statment>
+                <maps>
+                    <map>
+                        <map-description>ID</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_id</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.ID</class-property>
+                    </map>
+                    <map>
+                        <map-description>用户名</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_username</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.UserName</class-property>
+                    </map>
+                    <map>
+                        <map-description>密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_password</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.PassWords</class-property>
+                    </map>
+                    <map>
+                        <map-description>支付密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_upay</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.UPAY</class-property>
+                    </map>
+                    <map>
+                        <map-description>是否冻结</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>@_freeze</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.Freeze</class-property>
+                    </map>
+                    <map>
+                        <map-description>是否启用</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>@_valid</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.Valid</class-property>
+                    </map>
+                    <map>
+                        <map-description>创建时间</map-description>
+                        <value-type>Long</value-type>
+                        <map-name>@_createtime</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.CreateTime</class-property>
+                    </map>
+                </maps>
+                <result>
+                    <class-name>@NULL</class-name>
+                    <property type='String'>String</property>
+                </result>
+            </st>
+            <st>
+                <schame>CustomerInfor</schame>
+                <description>[删除值] 客户信息表</description>
+                <type>delete</type>
+                <id>CustomerInfor_delvalue</id>
+                <statment><![CDATA[delete from  CustomerInfor where 1=1 [and _id=@_id] [and _username=@_username] [and _password=@_password] [and _upay=@_upay] [and _freeze=@_freeze] [and _valid=@_valid] [and _createtime=@_createtime]  @ext_other ;]]> </statment>
+                <maps>
+                    <map>
+                        <map-description>ID</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_id</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>用户名</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_username</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_password</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>支付密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_upay</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>是否冻结</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>@_freeze</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>是否启用</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>@_valid</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>创建时间</map-description>
+                        <value-type>Long</value-type>
+                        <map-name>@_createtime</map-name>
+                        <class-property> </class-property>
+                    </map>
+                </maps>
+                <result>
+                    <class-name>@NULL</class-name>
+                    <property type='String'>String</property>
+                </result>
+            </st>
+            <st>
+                <description>[删除对象] 客户信息表</description>
+                <schame>CustomerInfor</schame>
+                <type>delete</type>
+                <id>CustomerInfor_delobject</id>
+                <statment><![CDATA[delete from  CustomerInfor where 1=1 [and _id=@_id] [and _username=@_username] [and _password=@_password] [and _upay=@_upay] [and _freeze=@_freeze] [and _valid=@_valid] [and _createtime=@_createtime]  @ext_other ;]]> </statment>
+                <maps>
+                    <map>
+                        <map-description>ID</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_id</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.ID</class-property>
+                    </map>
+                    <map>
+                        <map-description>用户名</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_username</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.UserName</class-property>
+                    </map>
+                    <map>
+                        <map-description>密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_password</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.PassWords</class-property>
+                    </map>
+                    <map>
+                        <map-description>支付密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_upay</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.UPAY</class-property>
+                    </map>
+                    <map>
+                        <map-description>是否冻结</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>@_freeze</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.Freeze</class-property>
+                    </map>
+                    <map>
+                        <map-description>是否启用</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>@_valid</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.Valid</class-property>
+                    </map>
+                    <map>
+                        <map-description>创建时间</map-description>
+                        <value-type>Long</value-type>
+                        <map-name>@_createtime</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.CreateTime</class-property>
+                    </map>
+                </maps>
+                <result>
+                    <class-name>@NULL</class-name>
+                    <property type='String'>String</property>
+                </result>
+            </st>
+            <st>
+                <description>[更新值] 客户信息表</description>
+                <schame>CustomerInfor</schame>
+                <type>update</type>
+                <id>CustomerInfor_updatevalue</id>
+                <statment><![CDATA[update CustomerInfor set [,_id=U@_id] [,_username=U@_username] [,_password=U@_password] [,_upay=U@_upay] [,_freeze=U@_freeze] [,_valid=U@_valid] [,_createtime=U@_createtime]  where 1=1 [and _id=@_id] [and _username=@_username] [and _password=@_password] [and _upay=@_upay] [and _freeze=@_freeze] [and _valid=@_valid] [and _createtime=@_createtime]  @ext_other ;]]> </statment>
+                <maps>
+                    <map>
+                        <map-description>ID</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_id</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>用户名</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_username</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_password</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>支付密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_upay</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>是否冻结</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>@_freeze</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>是否启用</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>@_valid</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>创建时间</map-description>
+                        <value-type>Long</value-type>
+                        <map-name>@_createtime</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>ID</map-description>
+                        <value-type>String</value-type>
+                        <map-name>U@_id</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>用户名</map-description>
+                        <value-type>String</value-type>
+                        <map-name>U@_username</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>U@_password</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>支付密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>U@_upay</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>是否冻结</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>U@_freeze</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>是否启用</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>U@_valid</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>创建时间</map-description>
+                        <value-type>Long</value-type>
+                        <map-name>U@_createtime</map-name>
+                        <class-property> </class-property>
+                    </map>
+                </maps>
+                <result>
+                    <class-name>@NULL</class-name>
+                    <property type='String'>String</property>
+                </result>
+            </st>
+            <st>
+                <description>[更新对象] 客户信息表</description>
+                <schame>CustomerInfor</schame>
+                <type>update</type>
+                <id>CustomerInfor_updateobject</id>
+                <statment><![CDATA[update CustomerInfor set [,_id=U@_id] [,_username=U@_username] [,_password=U@_password] [,_upay=U@_upay] [,_freeze=U@_freeze] [,_valid=U@_valid] [,_createtime=U@_createtime]  where 1=1 [and _id=@_id] [and _username=@_username] [and _password=@_password] [and _upay=@_upay] [and _freeze=@_freeze] [and _valid=@_valid] [and _createtime=@_createtime]  @ext_other ;]]> </statment>
+                <maps>
+                    <map>
+                        <map-description>ID</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_id</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.ID</class-property>
+                    </map>
+                    <map>
+                        <map-description>用户名</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_username</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.UserName</class-property>
+                    </map>
+                    <map>
+                        <map-description>密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_password</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.PassWords</class-property>
+                    </map>
+                    <map>
+                        <map-description>支付密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_upay</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.UPAY</class-property>
+                    </map>
+                    <map>
+                        <map-description>是否冻结</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>@_freeze</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.Freeze</class-property>
+                    </map>
+                    <map>
+                        <map-description>是否启用</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>@_valid</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.Valid</class-property>
+                    </map>
+                    <map>
+                        <map-description>创建时间</map-description>
+                        <value-type>Long</value-type>
+                        <map-name>@_createtime</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.CreateTime</class-property>
+                    </map>
+                    <map>
+                        <map-description>ID</map-description>
+                        <value-type>String</value-type>
+                        <map-name>U@_id</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.ID</class-property>
+                    </map>
+                    <map>
+                        <map-description>用户名</map-description>
+                        <value-type>String</value-type>
+                        <map-name>U@_username</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.UserName</class-property>
+                    </map>
+                    <map>
+                        <map-description>密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>U@_password</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.PassWords</class-property>
+                    </map>
+                    <map>
+                        <map-description>支付密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>U@_upay</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.UPAY</class-property>
+                    </map>
+                    <map>
+                        <map-description>是否冻结</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>U@_freeze</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.Freeze</class-property>
+                    </map>
+                    <map>
+                        <map-description>是否启用</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>U@_valid</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.Valid</class-property>
+                    </map>
+                    <map>
+                        <map-description>创建时间</map-description>
+                        <value-type>Long</value-type>
+                        <map-name>U@_createtime</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.CreateTime</class-property>
+                    </map>
+                </maps>
+                <result>
+                    <class-name>@NULL</class-name>
+                    <property type='String'>String</property>
+                </result>
+            </st>
+            <st>
+                <description>[查询值] 客户信息表</description>
+                <schame>CustomerInfor</schame>
+                <type>query</type>
+                <id>CustomerInfor_queryvalue</id>
+                <statment><![CDATA[select @result  from CustomerInfor  where 1=1 [and _id=@_id] [and _username=@_username] [and _password=@_password] [and _upay=@_upay] [and _freeze=@_freeze] [and _valid=@_valid] [and _createtime=@_createtime]   @ext_other  @ext_order  @ext_page ;]]> </statment>
+                <maps>
+                    <map>
+                        <map-description>ID</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_id</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>用户名</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_username</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_password</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>支付密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_upay</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>是否冻结</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>@_freeze</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>是否启用</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>@_valid</map-name>
+                        <class-property> </class-property>
+                    </map>
+                    <map>
+                        <map-description>创建时间</map-description>
+                        <value-type>Long</value-type>
+                        <map-name>@_createtime</map-name>
+                        <class-property> </class-property>
+                    </map>
+                </maps>
+                <result>
+                    <class-name>@VALUE</class-name>
+                    <property type='String'>_id</property>
+                    <property type='String'>_username</property>
+                    <property type='String'>_password</property>
+                    <property type='String'>_upay</property>
+                    <property type='Boolean'>_freeze</property>
+                    <property type='Boolean'>_valid</property>
+                    <property type='Long'>_createtime</property>
+                </result>
+            </st>
+            <st>
+                <description>[查询对象] 客户信息表</description>
+                <schame>CustomerInfor</schame>
+                <type>query</type>
+                <id>CustomerInfor_queryobject</id>
+                <statment><![CDATA[select @result  from CustomerInfor  where 1=1 [and _id=@_id] [and _username=@_username] [and _password=@_password] [and _upay=@_upay] [and _freeze=@_freeze] [and _valid=@_valid] [and _createtime=@_createtime]   @ext_other  @ext_order  @ext_page ;]]> </statment>
+                <maps>
+                    <map>
+                        <map-description>ID</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_id</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.ID</class-property>
+                    </map>
+                    <map>
+                        <map-description>用户名</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_username</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.UserName</class-property>
+                    </map>
+                    <map>
+                        <map-description>密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_password</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.PassWords</class-property>
+                    </map>
+                    <map>
+                        <map-description>支付密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_upay</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.UPAY</class-property>
+                    </map>
+                    <map>
+                        <map-description>是否冻结</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>@_freeze</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.Freeze</class-property>
+                    </map>
+                    <map>
+                        <map-description>是否启用</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>@_valid</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.Valid</class-property>
+                    </map>
+                    <map>
+                        <map-description>创建时间</map-description>
+                        <value-type>Long</value-type>
+                        <map-name>@_createtime</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.CreateTime</class-property>
+                    </map>
+                </maps>
+                <result>
+                    <class-name>wc.sm.bean.CustomerInfor</class-name>
+                    <property type='String'>ID</property>
+                    <property type='String'>UserName</property>
+                    <property type='String'>PassWords</property>
+                    <property type='String'>UPAY</property>
+                    <property type='Boolean'>Freeze</property>
+                    <property type='Boolean'>Valid</property>
+                    <property type='Long'>CreateTime</property>
+                </result>
+            </st>
+            <st>
+                <description>[查询对象] 客户信息表</description>
+                <schame>CustomerInfor</schame>
+                <type>query</type>
+                <id>CustomerInfor_countobject</id>
+                <statment><![CDATA[select count(_id) as num  from CustomerInfor  where 1=1 [and _id=@_id] [and _username=@_username] [and _password=@_password] [and _upay=@_upay] [and _freeze=@_freeze] [and _valid=@_valid] [and _createtime=@_createtime]   @ext_other  @ext_order  @ext_page ;]]> </statment>
+                <maps>
+                    <map>
+                        <map-description>ID</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_id</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.ID</class-property>
+                    </map>
+                    <map>
+                        <map-description>用户名</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_username</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.UserName</class-property>
+                    </map>
+                    <map>
+                        <map-description>密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_password</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.PassWords</class-property>
+                    </map>
+                    <map>
+                        <map-description>支付密码</map-description>
+                        <value-type>String</value-type>
+                        <map-name>@_upay</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.UPAY</class-property>
+                    </map>
+                    <map>
+                        <map-description>是否冻结</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>@_freeze</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.Freeze</class-property>
+                    </map>
+                    <map>
+                        <map-description>是否启用</map-description>
+                        <value-type>Boolean</value-type>
+                        <map-name>@_valid</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.Valid</class-property>
+                    </map>
+                    <map>
+                        <map-description>创建时间</map-description>
+                        <value-type>Long</value-type>
+                        <map-name>@_createtime</map-name>
+                        <class-property>wc.sm.bean.CustomerInfor.CreateTime</class-property>
+                    </map>
+                </maps>
+                <result>
+                    <class-name></class-name>
+                    <property type='Integer'>num</property>
+                </result>
+            </st>
+        </sts>
+    </namespace>
+</root>
